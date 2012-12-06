@@ -1,0 +1,13 @@
+﻿@model Zulu.Models.SearchRequest
+
+@{
+  ViewBag.Title = "Search Movies";
+}
+
+<h2>Search Movies</h2>
+@using (Html.BeginForm("Search", "Movies", FormMethod.Get))
+{
+  @Html.EditorFor(searchRequest => searchRequest.SearchTerm)
+  @Html.EditorFor(searchRequest => searchRequest.NumRows)
+  <input type="submit" value="Search"/>
+}

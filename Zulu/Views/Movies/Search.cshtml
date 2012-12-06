@@ -1,0 +1,12 @@
+﻿@model List<Zulu.Models.Movie>
+
+@{
+  ViewBag.Title = "title";
+}
+
+<h2>@ViewBag.Message</h2>
+
+@foreach( var movie in Model)
+{
+  <li> @movie.Title  </li>
+}

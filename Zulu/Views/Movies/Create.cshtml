@@ -1,0 +1,10 @@
+﻿@model Zulu.Models.Movie
+
+<h2>@ViewBag.Message</h2>
+
+@using (Html.BeginForm()) {
+@Html.LabelFor(movie=>movie.Title)
+@Html.EditorFor(movie=>movie.Title)
+<input type="submit" value="create" />
+}
+ 
